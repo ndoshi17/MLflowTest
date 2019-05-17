@@ -2,9 +2,10 @@ import os
 import sys
 from mlflow import log_metric, log_param, log_artifact
 
-param1 = sys.argv[0]
 
-if __name__ == "__main__":
+
+def main():
+    param1 = sys.argv[0]
     # Log a parameter (key-value pair)
     log_param("param1", param1)
 

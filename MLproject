@@ -1,0 +1,9 @@
+name: mlflow-example
+
+docker-env:
+	image: mlflowserver
+entry_points:
+	main:
+		parameters:
+			param1: float
+		command: "python train.py -P {param1}"
